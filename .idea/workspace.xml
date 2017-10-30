@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ef2dc16-8ada-43cc-ad1b-9d352f3abdde" name="Default" comment="" />
+    <list default="true" id="3ef2dc16-8ada-43cc-ad1b-9d352f3abdde" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/toursite.php" afterPath="$PROJECT_DIR$/HTML/toursite.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +66,8 @@
           <file leaf-file-name="toursite.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/HTML/toursite.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="703">
-                  <caret line="133" column="14" lean-forward="true" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+                <state relative-caret-position="494">
+                  <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -164,6 +166,9 @@
       <replace>class</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -204,7 +209,6 @@
         <option value="$USER_HOME$/Downloads/counter.php" />
         <option value="$USER_HOME$/Desktop/expo/connect.php" />
         <option value="$PROJECT_DIR$/HTML/index.php" />
-        <option value="$PROJECT_DIR$/HTML/toursite.php" />
         <option value="$PROJECT_DIR$/HTML/toursite_search.html" />
         <option value="$PROJECT_DIR$/css/frame.css" />
         <option value="$PROJECT_DIR$/php/logout.php" />
@@ -216,6 +220,7 @@
         <option value="$PROJECT_DIR$/HTML/login.html" />
         <option value="$PROJECT_DIR$/css/login.css" />
         <option value="$PROJECT_DIR$/HTML/course.php" />
+        <option value="$PROJECT_DIR$/HTML/toursite.php" />
       </list>
     </option>
   </component>
@@ -239,6 +244,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -362,12 +368,12 @@
       <workItem from="1508907481507" duration="1357000" />
       <workItem from="1508909164814" duration="1272000" />
       <workItem from="1509322652380" duration="16000" />
-      <workItem from="1509323377404" duration="2148000" />
+      <workItem from="1509323377404" duration="2755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208286000" />
+    <option name="totallyTimeSpent" value="208893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="87" width="1936" height="1056" extended-state="6" />
@@ -377,7 +383,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -762,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/toursite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="133" column="14" lean-forward="true" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+        <state relative-caret-position="494">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding />
         </state>
       </provider>
