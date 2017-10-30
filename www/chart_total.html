@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="./Chart.min.js"></script>
+</head>
+<body>
+	<div style="width: 50%;">
+		<canvas id="canvas" height="500" width="550"></canvas>
+	</div>
+
+	<script type="text/javascript">
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var months = ["주제관","영상관","인삼체험관","주제관","주제관","주제관"];
+		var barChart = null;
+		var barChartData = {
+			labels : ["주제관","영상관","인삼체험관","주제관","주제관","주제관"],
+			datasets : [
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,0.8)",
+					highlightFill : "rgba(151,187,205,0.75)",
+					highlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+
+		};
+
+		$(function() {
+			// var bufferCanvas = null;
+			bufferCanvas = document.getElementById("canvas");
+			// buffercanvas.setWidth($('.content1').width());
+			// bufferCanvas.width = canvas.width = parent.innerWidth;
+			// bufferCanvas.height = canvas.height = parent.innerHeight;
+			var ctx = document.getElementById("canvas").getContext("2d");
+
+			barChart = new Chart(ctx).Bar(barChartData, {
+				//Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+				scaleBeginAtZero : false,
+				//Boolean - Whether grid lines are shown across the chart
+				scaleShowGridLines : true,
+				//String - Colour of the grid lines
+				scaleGridLineColor : "rgba(0,0,0,0.05)",
+				//Number - Width of the grid lines
+				scaleGridLineWidth : 1,
+				//Boolean - If there is a stroke on each bar
+				barShowStroke : false,
+				//Number - Pixel width of the bar stroke
+				barStrokeWidth : 2,
+				//Number - Spacing between each of the X value sets
+				barValueSpacing : 5,
+				//Number - Spacing between data sets within X values
+				barDatasetSpacing : 1,
+				onAnimationProgress: function() {
+					console.log("onAnimationProgress");
+				},
+				onAnimationComplete: function() {
+					console.log("onAnimationComplete");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

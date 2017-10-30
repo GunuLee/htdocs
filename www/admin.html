@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <script type="text/javascript"></script>
+    <meta charset="utf-8">
+    <style type="text/css" href="">
+    #header {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    #menu {
+        width: 15%;
+        height: 1000px;
+        background-color: #34495E;
+        float: left;
+    }
+
+    #menu a {
+        color: white;
+    }
+
+    #frame {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    #content {
+        width: 85%;
+        float: left;
+        margin: auto;
+        display: block;
+    }
+
+    .menu {
+        text-align: center;
+        display: block;
+        margin-top: 25px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #submenu {
+        width: 85%;
+        float: right;
+        margin: auto;
+        display: block;
+        padding: 5px 0 5px 0;
+        background-color: #ECF1F1;
+    }
+    #login_tag {
+        /*position: relative;*/
+        left: 38%;
+        width: 300px;
+        height: 280px;
+        border: 2px solid #E1E1E1;
+        padding: 30px 70px 10px 70px;
+    }
+
+    #login {
+        width: 25%;
+        height: 200px;
+        display: block;
+        margin: auto;
+        margin-top: 200px;
+        border: 1px solid #E1E1E1;
+    }
+
+    #login_id {
+        margin-top: 10px;
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 10px;
+        border: 1px solid #E1E1E1;
+    }
+
+    #login_pw {
+        margin-top: 10px;
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 10px;
+        border: 1px solid #E1E1E1;
+    }
+
+    #login_base {
+        margin-top: 5px;
+        width: 80%;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        background: #6B3F3F;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    #signup_base {
+        margin-top: 10px;
+        width: 80%;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        background: #6B3F3F;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    #membership_button {
+        position: relative;
+        float: right;
+        margin-top: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="./01/img/logo.png" style="margin-bottom: 20px; margin-top: 20px;">
+    </div>
+    <div id="frame">
+        <div id="menu">
+            <a href="" class="menu">통계</a>
+            <a href="" class="menu">전시관관리</a>
+            <a href="" class="menu">주차장관리</a>
+            <a href="" class="menu">클레임관리</a>
+        </div>
+        <div id="content">
+            <div id="login">
+                <form name="l" action="../php/login.php" method="post">
+                    <center>
+                        <input type="text" id="login_id" name="id" placeholder="아아디">
+                        <br>
+                        <input type="password" id="login_pw" name="pwd" placeholder="비밀번호">
+                        <br>
+                        <button type="submit" id="login_base">로그인</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

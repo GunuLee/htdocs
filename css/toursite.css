@@ -1,0 +1,200 @@
+/*font-face*/
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NanumGothic.eot);
+    src: url(../font/NanumGothic.eot?#iefix) format('embedded-opentype'), url(../font/NanumGothic.woff2) format('woff2'), url(../font/NanumGothic.woff) format('woff'), url(../font/NanumGothic.ttf) format('truetype');
+}
+
+body {
+    font-family: "Nanum Gothic";
+}
+
+/*finish*/
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/NanumGothicBold.eot);
+    src: url(../font/NanumGothicBold.eot?#iefix) format('embedded-opentype'), url(../font/NanumGothicBold.woff2) format('woff2'), url(../font/NanumGothicBold.woff) format('woff'), url(../font/NanumGothicBold.ttf) format('truetype');
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+.component_content {
+    display: block;
+    margin: auto;
+}
+
+.component_content p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list_header {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+    font-size: 20px;
+}
+
+.list_header p {
+    margin-bottom: 10px;
+}
+
+.content_header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+}
+
+.content_header p {
+    margin: 0;
+    color: #858688;
+    float: left;
+}
+
+#tour_recommend {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 280px;
+}
+
+.toursite_button {
+    display: inline-block;
+    outline: solid 1px #EBEBEB;
+    height: 180px;
+    width: 32%;
+    margin: 0 2% 40px 0;
+}
+
+.toursite_button2 {
+    display: inline-block;
+    outline: solid 1px #EBEBEB;
+    height: 180px;
+    width: 31%;
+    margin: 0 0 40px 0;
+}
+
+.toursite_button_child {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.toursite_button_img {
+    width: 100%;
+    height: 180px;
+}
+
+.basebutton {
+    background-color: #FFFFFF;
+    border: solid 1px #C8D7FF;
+    width: 8%;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+    padding: 0 10px;
+    color: black;
+    font-size: 12px;
+    font-color: black;
+}
+
+#searchbutton {
+    float: right;
+    background-color: #f66d5b;
+    width: 15%;
+    height: 65px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#searchword {
+    background-color: #DDDDDD;
+    width: 50%;
+    height: 45px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sortbutton {
+    background-color: #DDDDDD;
+    float: right;
+    width: 10%;
+    height: 45px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.pagenumber {
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.number {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 4%;
+    height: 30px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#list {
+    position: relative;
+    width: 65%;
+    height: auto;
+    display: block;
+    margin: auto;
+}

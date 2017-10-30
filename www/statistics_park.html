@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="./Chart.min.js"></script>
+    <meta charset="utf-8">
+    <style type="text/css" href="">
+    #header {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    #menu {
+        width: 15%;
+        height: 850px;
+        background-color: #34495E;
+        float: left;
+    }
+
+    #menu a {
+        color: white;
+    }
+
+    #frame {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    #container {
+        width: 100%;
+        height: 800px;
+        padding-top: 30px;
+        display: block;
+        margin: auto;
+    }
+
+    .menu {
+        text-align: center;
+        display: block;
+        margin-top: 25px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #submenu {
+        width: 85%;
+        float: right;
+        margin: auto;
+        display: block;
+        padding: 5px 0 5px 0;
+        background-color: #ECF1F1;
+    }
+    
+    .submenu {
+        text-decoration: none;
+        color: black;
+        margin-left: 10%;
+        margin-top: 100px;
+    }
+
+    #content {
+        width: 85%;
+        float: left;
+        margin: auto;
+        display: block;
+    }
+
+    .content1 {
+        width: 30%;
+        height: 250px;
+        margin-right: 3%;
+        /*background-color: black;*/
+        float: left;
+        margin-top: 100px;
+    }
+
+    .content2 {
+        width: 30%;
+        height: 250px;
+        margin-right: 3%;
+        background-color: black;
+        float: left;
+        margin-top: 50px;
+    }
+
+    #current {
+        width: 20%;
+        float: right;
+        height: 300px;
+        margin-top: 50px;
+        margin-right: 10%;
+        /*background-color: black;*/
+    }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="./01/img/logo.png" style="margin-bottom: 20px; margin-top: 20px;">
+    </div>
+    <div id="frame">
+        <div id="menu">
+            <a href="" class="menu">통계</a>
+            <a href="statistics_주제관.html" class="menu">전시관관리</a>
+            <a href="statistics_park.html" class="menu">주차장관리</a>
+            <a href="" class="menu">클레임관리</a>
+        </div>
+        <div id="container">
+            <div id="submenu">
+                <a href="" class="submenu">Total</a>
+                <a href="" class="submenu">영상관</a>
+                <a href="" class="submenu">인삼체험관</a>
+                <a href="" class="submenu">주제관</a>
+                <a href="" class="submenu">주제관</a>
+                <a href="" class="submenu">주제관</a>
+            </div>
+            <!-- <iframe src="./chart_total.html"></iframe> -->
+            <div id="content">
+                <!-- <iframe src="./chart_total.html" style="width: 100%; height: 100%"; frameborder="0" scrolling="no"></iframe> -->
+                <div id="graph" style="width: 55%; height: 300px; float: left; margin-left: 10%; border: 2px solid; margin-top: 50px;">
+                    <canvas id="canvas" height="450" width="450" style="float: left; margin-top: 20px;"></canvas>
+                    <script type="text/javascript">
+                    var randomScalingFactor = function() { return Math.round(Math.random() * 100) };
+                    var months = ["주제관", "영상관", "인삼체험관", "주제관", "주제관", "주제관", "주제관", "주제관", "주제관", "total"];
+                    var barChart = null;
+                    var barChartData = {
+                        labels: ["주제관", "주제관", "주제관", "주제관", "주제관", "영상관", "인삼체험관", "주제관", "주제관", "total"],
+                        datasets: [{
+                            fillColor: "rgba(151,187,205,0.5)",
+                            strokeColor: "rgba(151,187,205,0.8)",
+                            highlightFill: "rgba(151,187,205,0.75)",
+                            highlightStroke: "rgba(151,187,205,1)",
+                            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+                        }]
+
+                    };
+
+                    $(function() {
+                        // var bufferCanvas = null;
+                        bufferCanvas = document.getElementById("canvas");
+                        // buffercanvas.setWidth($('.content1').width());
+                        bufferCanvas.width = canvas.width = parent.innerWidth * 0.35;
+                        bufferCanvas.height = canvas.height = parent.innerHeight * 0.3;
+                        var ctx = document.getElementById("canvas").getContext("2d");
+
+                        barChart = new Chart(ctx).Bar(barChartData, {
+                            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+                            scaleBeginAtZero: false,
+                            //Boolean - Whether grid lines are shown across the chart
+                            scaleShowGridLines: true,
+                            //String - Colour of the grid lines
+                            scaleGridLineColor: "rgba(0,0,0,0.05)",
+                            //Number - Width of the grid lines
+                            scaleGridLineWidth: 1,
+                            //Boolean - If there is a stroke on each bar
+                            barShowStroke: false,
+                            //Number - Pixel width of the bar stroke
+                            barStrokeWidth: 2,
+                            //Number - Spacing between each of the X value sets
+                            barValueSpacing: 5,
+                            //Number - Spacing between data sets within X values
+                            barDatasetSpacing: 1,
+                            onAnimationProgress: function() {
+                                console.log("onAnimationProgress");
+                            },
+                            onAnimationComplete: function() {
+                                console.log("onAnimationComplete");
+                            }
+                        });
+                    });
+                    </script>
+                </div>
+                <div id="current" style="border: 2px solid">
+                    <div id="current_text" style="width: 100%; height: 50px; text-align: center; font-size: 25px;">
+                        <p>현재</p>
+                    </div>
+                    <div id="count" style="width: 100%; height: 230px; text-align: center; padding-top: 50px; font-size: 50px;">
+                        <span>DB  </span><span>대</span>
+                    </div>
+                </div>
+                <div style="clear: both; padding-top: 50px;">
+                    <iframe style="width: 35%; height: 300px; margin-left: 10%;" src="https://www.youtube.com/embed/Dy8v_ikdw4M?amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe style="width: 35%; height: 300px; margin-left: 10%;" src="https://www.youtube.com/embed/Dy8v_ikdw4M?amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

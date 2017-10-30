@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>콕콕 홈페이지 | 여행 SNS 콕콕, Travel Social Network Service</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <script type="text/javascript" src="../jQuery/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/frame.css" media="screen and (min-width: 1200px) and (max-width: 5000px)">
+    <link rel="stylesheet" type="text/css" href="../css/frame_mobile.css" media="screen and (min-width: 200px) and (max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="../css/frame_tablet.css" media="screen and (min-width: 601px) and (max-width: 1199px)">
+</head>
+<body id="body">
+<div id="header">
+    <div id="logo">
+        <a href="index.php"><img src="../img/logo.png" id="logo_img"></a>
+    </div>
+    <div id="login">
+        <ul id="log">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="signup.html">회원가입</a></li>
+        </ul>
+    </div>
+    <div id="menu">
+        <ul id="navMenu">
+            <a href="course.php"><li>코스</li></a>
+            <a href="toursite.php"><li>관광지</li></a>
+            <a href="festivalinfo.php"><li>축제정보</li></a>
+            <a href="review.php"><li>여행후기</li></a>
+            <a href="http://www.menycool.com/javascript-image-slider" target="_blank"></a>
+        </ul>
+    </div>
+</div>
+<div id="search">
+    <div id="search_text_field">
+                    <span id="search_bar">
+                    <input type='text' id='input_text' placeholder="여행코스 검색" style="text-align: center"/>
+                </span>
+        <button type='submit' id='sch_smit'>검색</button>
+    </div>
+    <ul id="search_nav">
+        <li><a href="#none">코스짜기+</a></li>
+        <li><a href="#none">여행후기 작성+</a></li>
+        <li><a href="#none">여행 팁+</a></li>
+    </ul>
+</div>
+<div id="container" style="width: 25%; margin-bottom: 12%;">
+    <p id="login_text">회원 로그인</p>
+    <div id="login_tag">
+        <form name="l" action="../php/login.php" method="post">
+            <input type="text" id="login_id" name="id" placeholder="아아디(e-mail)">
+            <br>
+            <input type="password" id="login_pw" name="pwd" placeholder="비밀번호">
+            <br>
+            <input type="checkbox" name="checkbox" id="login_check">
+            <label for="login_check">로그인 정보기억</label>
+            <a href="signup.html" id="membership_button">회원가입하기</a>
+            <br>
+            <button type="submit" id="login_base">로그인</button>
+            <a href="#none"><img src="../img/naverlogin.jpg" id="login_naver"></a>
+            <a href="#none"><img src="../img/kakaologin.jpg" id="login_kakao"></a>
+        </form>
+    </div>
+</div>
+<div id="footer">
+    <div id="footer2">
+        <div id="text">
+            <div id="nav">
+                <a href="" target="_self" class="foottext" style="color: white">콕콕소개</a>
+                <a href="" target="_self" class="foottext" style="color: white">콕콕 사용법</a>
+                <a href="" target="_self" class="foottext" style="color: white">이용문의</a>
+                <a href="" target="_self" class="foottext" style="color: white">이용약관</a>
+                <a href="" target="_self" class="foottext" style="color: white">개인정보 취급방침</a>
+            </div>
+            <div id="address">
+                TEL. 070-7010-5450 / FAX. 043-238-0567 / <span class="addspan">제휴문의 : service@kockoc.net</span>
+                <br> 주소 : 충북 청주시 서원구 충대로1 <span class="addspan">학연산공동기술연구원 579호</span>
+                <br> COPYRIGHT 2016 KocKoc. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+        <div id="store">
+            <a href=""><img src="../img/appstore.png" href="#none" class="footimg" id="footimg1"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.kocapplication.pixeleye.kockocapp"><img
+                    src="../img/google.png" href="#none" class="footimg" id="footimg2"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

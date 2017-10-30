@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>주제관 - 건강의 미래, 고려인삼</title>
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+      <script type="text/javascript">
+        // Global variable to track current file name.
+        var currentFile = "";
+        function playAudio() {
+            // Check for audio element support.
+            if (window.HTMLAudioElement) {
+                try {
+                    var oAudio = document.getElementById('myaudio');
+                    var btn = document.getElementById('play'); 
+                    var audioURL = document.getElementById('audiofile'); 
+
+                    //Skip loading if current file hasn't changed.
+                    if (audioURL.value !== currentFile) {
+                        oAudio.src = audioURL.value;
+                        currentFile = audioURL.value;                       
+                    }
+
+                    // Tests the paused attribute and set state. 
+                    if (oAudio.paused) {
+                        oAudio.play();
+                        btn.textContent = "Pause";
+                    }
+                    else {
+                        oAudio.pause();
+                        btn.textContent = "Play";
+                    }
+                }
+                catch (e) {
+                    // Fail silently but show in F12 developer tools console
+                     if(window.console && console.error("Error:" + e));
+                }
+            }
+        }
+             // Rewinds the audio file by 30 seconds.
+
+        function rewindAudio() {
+             // Check for audio element support.
+            if (window.HTMLAudioElement) {
+                try {
+                    var oAudio = document.getElementById('myaudio');
+                    oAudio.currentTime -= 30.0;
+                }
+                catch (e) {
+                    // Fail silently but show in F12 developer tools console
+                     if(window.console && console.error("Error:" + e));
+                }
+            }
+        }
+
+             // Fast forwards the audio file by 30 seconds.
+
+        function forwardAudio() {
+
+             // Check for audio element support.
+            if (window.HTMLAudioElement) {
+                try {
+                    var oAudio = document.getElementById('myaudio');
+                    oAudio.currentTime += 30.0;
+                }
+                catch (e) {
+                    // Fail silently but show in F12 developer tools console
+                     if(window.console && console.error("Error:" + e));
+                }
+            }
+        }
+
+             // Restart the audio file to the beginning.
+
+        function restartAudio() {
+             // Check for audio element support.
+            if (window.HTMLAudioElement) {
+                try {
+                    var oAudio = document.getElementById('myaudio');
+                    oAudio.currentTime = 0;
+                }
+                catch (e) {
+                    // Fail silently but show in F12 developer tools console
+                     if(window.console && console.error("Error:" + e));
+               }
+            }
+        }
+            
+    </script>
+  <body>
+  <div style="width:100%;">
+   <div style="width:100%; text-align: center;"><img img src="https://beaconplus.co.kr/01/img/logo.png"/></div>
+      <div style="width:100%; text-align: center;"><a href="http://beaconplus.co.kr/02_01.html"><img img src="https://beaconplus.co.kr/01/img/t_m_01_02.png"/></a>&nbsp;<a href="http://beaconplus.co.kr/02_02.html"><img img src="https://beaconplus.co.kr/01/img/t_m_02_02.png"/></a>&nbsp;<a href="http://beaconplus.co.kr/02_03.html"><img img src="https://beaconplus.co.kr/01/img/t_m_03_02.png"/></a>&nbsp;<a href="http://beaconplus.co.kr/02_04.html"><img img src="https://beaconplus.co.kr/01/img/t_m_04_01.png"/></a></div>
+   <div style="height:10px;"></div>
+   <div style="height:10px; background-color: #000000;"></div>
+   <div style="height:20px; background-color: #000000;">
+<span style="font-size: 13pt; color: #ffffff;"><strong>&nbsp;&nbsp;テーマ館 - 交易の中心、高麗人参 </strong></span>
+   </div>
+      <div style="height:10px; background-color: #000000;"></div>
+   <div style="height:10px;"></div>
+    <div style="float:left; width:30%; height:66px;">&nbsp;<img src="https://beaconplus.co.kr/01/img/map.png"/></div>
+    <div style="float:left; width:70%; height:66px; text-align: right;">音声を聞
+    <audio id="myaudio">
+      HTML5 audio not supported
+    </audio>
+    <button style="WIDTH: 80pt; HEIGHT: 30pt" value="./01/jp.mp3" id="audiofile" onClick="playAudio();">
+      Play
+    </button>
+    </div>
+    <div style="width:100%;">
+    <span style="font-size: 9pt; color: #838383;"><img src="https://beaconplus.co.kr/01/img/img_03.png" width="100%"/>沖縄県名護市辺野古の新基地建設を巡り、無許可で岩礁を破砕するのは県漁業調整規則に違反しているとして、県は24日午後、国を相手に岩礁破砕を伴う工事の差し止めを求める訴訟を那覇地裁に起こした。県側は判決が出るまで、工事を一時的に禁止する仮処分も地裁に申し立てた。新基地に関する県と国の対立は、昨年12月の違法確認訴訟上告審で県敗訴が確定して以来、5度目の訴訟に持ち込まれた。(沖縄タイムス)
+<iframe width="100%" height="300" src="https://www.youtube.com/embed/Dy8v_ikdw4M" frameborder="0" allowfullscreen></iframe><br><br>
+<img src="https://beaconplus.co.kr/01/img/img_04.png" width="100%"/><br>
+名護市辺野古の新基地建設で県の岩礁破砕許可を得ずに工事を進めるのは違法だとして沖縄県は２４日午後、国を相手にした差し止め訴訟を那覇地裁に提起した。県の弁護団が２４日午後２時３４分、那覇地裁に訴状を提出した。岩礁破砕許可を県に申請するよう国に求めている。差し止め訴訟と併せて判決が出るまで工事を止めるよう求める仮処分も申し立てた。２４日夕には翁長雄志知事が記者会見で提訴について見解を述べる。新基地建設を巡り、国と県が再び法廷闘争に入る。
+</span>
+   </div>
+  </div>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
