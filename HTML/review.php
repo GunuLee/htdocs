@@ -24,6 +24,7 @@
     <div id="login">
         <ul id="log">
             <?php
+            session_start();
             if (!$_SESSION['is_login']) {
                 echo "<li><a href=\"login.html\">로그인</a></li><li><a href=\"signup.html\">회원가입</a></li>";
             } else {
